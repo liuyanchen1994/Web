@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLT.Web", "HLT.Web\HLT.Web.csproj", "{9D11DC57-0A15-41EB-84C4-201B29762530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLT.Tests", "HLT.Tests\HLT.Tests.csproj", "{28056EB5-2D53-4116-A995-C8BFF30B044B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTL.Core", "HTL.Core\HTL.Core.csproj", "{58BF6C6B-6E67-43E4-8F4C-1FF050FB0483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLT.Model", "HLT.Model\HLT.Model.csproj", "{36CF183D-A64A-4D04-8E5F-EBDA778538B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLT.ViewModel", "HLT.ViewModel\HLT.ViewModel.csproj", "{D9649047-8938-47CC-A7B2-099CCF681A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLT.Data", "HLT.Data\HLT.Data.csproj", "{A86F629E-943A-4C87-B476-CCD6DFA33146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLT.Domain", "HLT.Domain\HLT.Domain.csproj", "{A4F14A2B-FC08-4D3F-8226-E1C6D1B18AA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D11DC57-0A15-41EB-84C4-201B29762530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D11DC57-0A15-41EB-84C4-201B29762530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D11DC57-0A15-41EB-84C4-201B29762530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D11DC57-0A15-41EB-84C4-201B29762530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28056EB5-2D53-4116-A995-C8BFF30B044B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28056EB5-2D53-4116-A995-C8BFF30B044B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28056EB5-2D53-4116-A995-C8BFF30B044B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28056EB5-2D53-4116-A995-C8BFF30B044B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BF6C6B-6E67-43E4-8F4C-1FF050FB0483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BF6C6B-6E67-43E4-8F4C-1FF050FB0483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BF6C6B-6E67-43E4-8F4C-1FF050FB0483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BF6C6B-6E67-43E4-8F4C-1FF050FB0483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CF183D-A64A-4D04-8E5F-EBDA778538B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CF183D-A64A-4D04-8E5F-EBDA778538B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CF183D-A64A-4D04-8E5F-EBDA778538B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CF183D-A64A-4D04-8E5F-EBDA778538B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9649047-8938-47CC-A7B2-099CCF681A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9649047-8938-47CC-A7B2-099CCF681A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9649047-8938-47CC-A7B2-099CCF681A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9649047-8938-47CC-A7B2-099CCF681A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86F629E-943A-4C87-B476-CCD6DFA33146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86F629E-943A-4C87-B476-CCD6DFA33146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86F629E-943A-4C87-B476-CCD6DFA33146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86F629E-943A-4C87-B476-CCD6DFA33146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F14A2B-FC08-4D3F-8226-E1C6D1B18AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F14A2B-FC08-4D3F-8226-E1C6D1B18AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F14A2B-FC08-4D3F-8226-E1C6D1B18AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F14A2B-FC08-4D3F-8226-E1C6D1B18AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E3929F8-05B1-4297-B1A3-3BD7B1AE3D62}
+	EndGlobalSection
+EndGlobal
