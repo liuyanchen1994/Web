@@ -2,6 +2,7 @@
 // package to your project.
 ////#define Handle_PageResultOfT
 
+using HLT.Web.Areas.HelpPage.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -58,8 +59,22 @@ namespace HLT.Web.Areas.HelpPage
             config.SetSampleForMediaType(
                 new TextSample("Binary JSON content. See http://bsonspec.org for details."),
                 new MediaTypeHeaderValue("application/bson"));
-            //增加API文档注释，需要设置生成配置XML文档
-            //config.SetDocumentationProvider(new XmlDocumentationProvider(HttpContext.Current.Server.MapPath("~/bin/HLT.Web.xml")));
+
+            ////读取多个XML注释文档生成API文档
+            //config.SetDocumentationProvider(
+            //    new MultiXmlDocumentationProvider(
+            //        HttpContext.Current.Server.MapPath("~/bin/HLT.Web.xml"),
+            //        HttpContext.Current.Server.MapPath("~/bin/HLT.Web.xml")
+            //    )
+            //);
+
+            ////增加API文档注释，需要设置生成配置XML文档
+            //config.SetDocumentationProvider(
+            //    new XmlDocumentationProvider(
+            //        HttpContext.Current.Server.MapPath("~/bin/HLT.Web.xml")
+            //    )
+            //);
+
             //// Uncomment the following to use "[0]=foo&[1]=bar" directly as the sample for all actions that support form URL encoded format
             //// and have IEnumerable<string> as the body parameter or return type.
             //config.SetSampleForType("[0]=foo&[1]=bar", new MediaTypeHeaderValue("application/x-www-form-urlencoded"), typeof(IEnumerable<string>));
