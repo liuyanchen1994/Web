@@ -10,6 +10,18 @@ namespace HLT.Web.Controllers
 {
     public class TestController : ApiController
     {
-        //private readonly 
+        private readonly ITest _test;
+
+        public TestController() { }
+        public TestController(ITest test)
+        {
+            _test = test;
+        }
+
+        [HttpGet]
+        public string Test(string id)
+        {
+            return _test.Add(id);
+        }
     }
 }
