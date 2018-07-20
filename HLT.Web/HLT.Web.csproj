@@ -351,10 +351,6 @@
       <Project>{d9649047-8938-47cc-a7b2-099ccf681a61}</Project>
       <Name>HLT.ViewModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HTL.Core\HLT.Core.csproj">
-      <Project>{58bf6c6b-6e67-43e4-8f4c-1ff050fb0483}</Project>
-      <Name>HLT.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
