@@ -2,6 +2,9 @@
 using log4net;
 using System.Web.Http;
 using System.Web.Http.Filters;
+using System.Net.Http;
+using System.Net;
+using HTL.Core.WebApi;
 
 namespace HLT.Web.Filters
 {
@@ -17,7 +20,7 @@ namespace HLT.Web.Filters
                 actionExecutedContext.Exception.Message
                 );
             SysLogger.Error(ErrorMsg);
+            actionExecutedContext.Response = ResponseMessageResult.JsonMessage(new { ret = true, msg = "接口错误" }, HttpStatusCode.OK);
         }
     }
-
 }

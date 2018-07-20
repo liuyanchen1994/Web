@@ -25,7 +25,7 @@ namespace HLT.Web
 
             Models.Config.Init();
             //Auto注册
-            //RegisterAutofacForSingle.RegisterAutofac();
+            RegisterAutofacForSingle.RegisterAutofac();
         }
 
         protected void Application_Error()

@@ -39,8 +39,6 @@ namespace HLT.Web.Controllers
         [HttpPost]
         public IHttpActionResult Add(Student student)
         {
-            string a = "qwe";
-            int i = int.Parse(a);
             return Json(student);
         }
 

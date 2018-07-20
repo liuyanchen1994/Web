@@ -16,6 +16,7 @@ namespace HTL.Core.WebApi
         public static HttpResponseMessage JsonMessage<T>(T t, HttpStatusCode code = HttpStatusCode.OK)
         {
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(t);// Geo.Helper.Serialize.Json.Serialize<T>(t);
+            
             return new HttpResponseMessage(code)
             {
                 Content = new ByteArrayContent(System.Text.Encoding.UTF8.GetBytes(json))

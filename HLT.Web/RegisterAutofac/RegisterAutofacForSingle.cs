@@ -20,7 +20,7 @@ namespace HLT.Web.RegisterAutofac
             builder.RegisterFilterProvider();
 
             #region  IOC配置区域
-
+            builder.RegisterType<Domain.Test>().As<Domain.ITest>().InstancePerDependency();
             #endregion
 
             var container = builder.Build();//创建一个容器

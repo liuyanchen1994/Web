@@ -2,7 +2,7 @@
 
 namespace HLT.Web.Models
 {
-    public class Config
+    public class Config:BaseConfig
     {
         static Config()
         {

@@ -58,6 +58,9 @@
     <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac.Integration.WebApi, Version=4.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.WebApi2.4.2.0\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -240,6 +243,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Filters\ErrorException.cs" />
     <Compile Include="Filters\ExceptionFilterAttribute.cs" />
@@ -347,9 +351,9 @@
       <Project>{d9649047-8938-47cc-a7b2-099ccf681a61}</Project>
       <Name>HLT.ViewModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HTL.Core\HTL.Core.csproj">
+    <ProjectReference Include="..\HTL.Core\HLT.Core.csproj">
       <Project>{58bf6c6b-6e67-43e4-8f4c-1ff050fb0483}</Project>
-      <Name>HTL.Core</Name>
+      <Name>HLT.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
