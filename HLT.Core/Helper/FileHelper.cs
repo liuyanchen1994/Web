@@ -2,7 +2,7 @@
 using System.IO;
 using System.Web;
 
-namespace HTL.Core.Helper
+namespace HLT.Core.Helper
 {
     public class FileHelper
     {

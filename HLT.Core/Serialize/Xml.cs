@@ -3,7 +3,7 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Collections;
 
-namespace HTL.Core.Serialize
+namespace HLT.Core.Serialize
 {
     /// <summary>
     /// Xml序列化与反序列化

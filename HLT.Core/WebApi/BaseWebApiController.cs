@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Results;
 
-namespace HTL.Core.WebApi
+namespace HLT.Core.WebApi
 {
     public class BaseWebApiController : ApiController
     {

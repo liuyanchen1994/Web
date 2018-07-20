@@ -343,6 +343,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HLT.Core\HLT.Core.csproj">
+      <Project>{58bf6c6b-6e67-43e4-8f4c-1ff050fb0483}</Project>
+      <Name>HLT.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HLT.Domain\HLT.Domain.csproj">
       <Project>{a4f14a2b-fc08-4d3f-8226-e1c6d1b18aa6}</Project>
       <Name>HLT.Domain</Name>

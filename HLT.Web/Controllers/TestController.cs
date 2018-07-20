@@ -4,12 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using HLT
+using HLT.Domain;
 
 namespace HLT.Web.Controllers
 {
     public class TestController : ApiController
     {
-        private readonly 
+        //private readonly 
     }
 }

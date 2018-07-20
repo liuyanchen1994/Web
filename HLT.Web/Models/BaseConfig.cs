@@ -20,8 +20,8 @@ namespace HLT.Web.Models
         {
             string fileName = typeof(T).FullName + ".config";
             string _path = System.Web.HttpContext.Current.Server.MapPath(SavePath + fileName);
-            string xml = HTL.Core.Helper.FileHelper.ReadFile(_path);
-            var config = HTL.Core.Serialize.Xml.Deserialize<T>(xml);
+            string xml = HLT.Core.Helper.FileHelper.ReadFile(_path);
+            var config = HLT.Core.Serialize.Xml.Deserialize<T>(xml);
             return config != null ? config : new T();
         }
         /// <summary>
@@ -32,8 +32,8 @@ namespace HLT.Web.Models
         {
             string fileName = typeof(T).FullName + ".config";
             string _path = System.Web.HttpContext.Current.Server.MapPath(SavePath + fileName);
-            string xml = HTL.Core.Serialize.Xml.Serialize<T>(t);
-            HTL.Core.Helper.FileHelper.CreateFile(_path, xml);
+            string xml = HLT.Core.Serialize.Xml.Serialize<T>(t);
+            HLT.Core.Helper.FileHelper.CreateFile(_path, xml);
         }
     }
 }
