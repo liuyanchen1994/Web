@@ -17,7 +17,7 @@ namespace HLT.Web.Controllers
         {
             _test = test;
         }
-
+        
         [HttpGet]
         public string Test(string id)
         {

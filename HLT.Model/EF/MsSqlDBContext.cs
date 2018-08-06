@@ -23,9 +23,11 @@
 /************************************************************************************/
 #endregion
 
+using HLT.Model.Entity;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +36,7 @@ namespace HLT.Model.EF
 {
     public class MsSqlDBContext : DbContext, IUnitOfWork
     {
-        public MsSqlDBContext() : base("SqlServer")
+        public MsSqlDBContext() : base("name=SqlServer")
         {
 
         }
@@ -46,7 +48,9 @@ namespace HLT.Model.EF
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
+            base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Test> Tests { get; set; }
     }
 }
